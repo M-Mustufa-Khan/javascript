@@ -1,0 +1,17 @@
+#content {
+    height: 100px;
+    width: 200px;
+    background-color: aqua;
+    border-radius: 20px;
+    border-color: rgb(0, 0, 0);
+    border-style: solid;
+}
+
+.container {
+    color: #fbfbff;
+    background-color: rgb(246, 5, 5);
+    border-radius: 12px;
+    border-color: rgb(246, 5, 5);
+    margin-top: 20px;
+    margin-left: 15px;
+}
