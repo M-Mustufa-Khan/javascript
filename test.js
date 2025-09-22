@@ -1717,17 +1717,39 @@ alert('You Visited the Webpage '+ visitcount + ' times');*/
 // METHOD DOM Manipulation
 // Question No 01
 
-const main = document.getElementById("main-content")
-console.log(main)
+// const main = document.getElementById("main-content")
+// console.log(main)
 
-main.children
-console.log(main)
+// main.children
+// console.log(main)
 
-let elements = document.getElementsByClassName("render")
-for (let i = 0; i < elements.length; i++) {
-    console.log(elements[i].innerHTML);  
-}
+// let elements = document.getElementsByClassName("render")
+// for (let i = 0; i < elements.length; i++) {
+//     console.log(elements[i].innerHTML);  
+// }
 
-document.getElementById("first-name").value = 'Mustufa'
-document.getElementById("last-name").value = "Khan";
-document.getElementById("email").value = "mustufakhan@example.com";
+// document.getElementById("first-name").value = 'Mustufa'
+// document.getElementById("last-name").value = "Khan";
+// document.getElementById("email").value = "mustufakhan@example.com";
+
+// Question No 02
+let formContent = document.getElementById("main-content");
+console.log("Node Type of Element: ", formContent.nodeType);
+
+let lastName = document.getElementById("lastName")
+console.log("Node Type of Last Name: ", lastName.nodeType);
+console.log("Node Type of Last Name Child: ", lastName.firstChild.nodeType);
+
+lastName.firstChild.nodeValue = "Bank"
+console.log("Updated Last Name:", lastName.innerHTML);
+
+let mainContent = document.getElementById("main-content");
+console.log("First child of main-content:", mainContent.firstChild);
+console.log("Last child of main-content:", mainContent.lastChild);
+
+console.log("Next sibling of lastName:", lastName.nextSibling);
+console.log("Previous sibling of lastName:", lastName.previousSibling);
+
+let email = document.getElementById("email");
+console.log("Parent node of email:", email.parentNode);
+console.log("Node type of email:", email.nodeType);
