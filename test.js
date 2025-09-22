@@ -1711,3 +1711,23 @@ alert('You Visited the Webpage '+ visitcount + ' times');*/
 // }
 
 // cashier(userInput);
+// ====================== END ============================================
+// ====================== START CHAPTER 58 TO 67 ==========================
+
+// METHOD DOM Manipulation
+// Question No 01
+
+const main = document.getElementById("main-content")
+console.log(main)
+
+main.children
+console.log(main)
+
+let elements = document.getElementsByClassName("render")
+for (let i = 0; i < elements.length; i++) {
+    console.log(elements[i].innerHTML);  
+}
+
+document.getElementById("first-name").value = 'Mustufa'
+document.getElementById("last-name").value = "Khan";
+document.getElementById("email").value = "mustufakhan@example.com";
