@@ -16,3 +16,23 @@
     margin-left: 15px;
     
 } */
+.box {
+    height: 150px;
+    width: 150px;
+}
+
+.bttn1 {
+    background-color: green;
+}
+
+.bttn2 {
+    background-color: rgb(0, 184, 246);
+}
+
+.bttn3 {
+    background-color: yellow;
+}
+
+.bttn4 {
+    background-color: orange;
+}

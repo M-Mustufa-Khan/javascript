@@ -1733,23 +1733,45 @@ alert('You Visited the Webpage '+ visitcount + ' times');*/
 // document.getElementById("email").value = "mustufakhan@example.com";
 
 // Question No 02
-let formContent = document.getElementById("main-content");
-console.log("Node Type of Element: ", formContent.nodeType);
+// let formContent = document.getElementById("main-content");
+// console.log("Node Type of Element: ", formContent.nodeType);
 
-let lastName = document.getElementById("lastName")
-console.log("Node Type of Last Name: ", lastName.nodeType);
-console.log("Node Type of Last Name Child: ", lastName.firstChild.nodeType);
+// let lastName = document.getElementById("lastName")
+// console.log("Node Type of Last Name: ", lastName.nodeType);
+// console.log("Node Type of Last Name Child: ", lastName.firstChild.nodeType);
 
-lastName.firstChild.nodeValue = "Bank"
-console.log("Updated Last Name:", lastName.innerHTML);
+// lastName.firstChild.nodeValue = "Bank"
+// console.log("Updated Last Name:", lastName.innerHTML);
 
-let mainContent = document.getElementById("main-content");
-console.log("First child of main-content:", mainContent.firstChild);
-console.log("Last child of main-content:", mainContent.lastChild);
+// let mainContent = document.getElementById("main-content");
+// console.log("First child of main-content:", mainContent.firstChild);
+// console.log("Last child of main-content:", mainContent.lastChild);
 
-console.log("Next sibling of lastName:", lastName.nextSibling);
-console.log("Previous sibling of lastName:", lastName.previousSibling);
+// console.log("Next sibling of lastName:", lastName.nextSibling);
+// console.log("Previous sibling of lastName:", lastName.previousSibling);
 
-let email = document.getElementById("email");
-console.log("Parent node of email:", email.parentNode);
-console.log("Node type of email:", email.nodeType);
+// let email = document.getElementById("email");
+// console.log("Parent node of email:", email.parentNode);
+// console.log("Node type of email:", email.nodeType);
+
+// ========================== End of Chapter 58 TO 67 ======================================
+
+// let main = document.querySelector(".box");
+
+// let btn  = document.querySelector(".bttn1");
+// let btn2 = document.querySelector(".bttn2");
+// let btn3 = document.querySelector(".bttn3");
+// let btn4 = document.querySelector(".bttn4");
+
+// btn.addEventListener("click", () => {
+//     main.style.backgroundColor = "green";
+// });
+// btn2.addEventListener("click", () => {
+//     main.style.backgroundColor = "blue";
+// });
+// btn3.addEventListener("click", () => {
+//     main.style.backgroundColor = "yellow";
+// });
+// btn4.addEventListener("click", () => {
+//     main.style.backgroundColor = "orange";
+// });
