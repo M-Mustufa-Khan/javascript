@@ -44,7 +44,7 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 } */
 
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
   .calculator {
     width: 90%;
   }
@@ -123,4 +123,4 @@ button:hover {
 
 #clearbtn:hover {
   background: #ef4444;
-}
+} */
