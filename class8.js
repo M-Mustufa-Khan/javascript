@@ -33,116 +33,116 @@
 // const findPerson = office.find(person => person.name === "ALI");
 // console.log(findPerson);    
 
-const patients = [
-    {
-        name: "Fareed Khan",
-        age: 45,
-        diagnosis: "Hypertension",
-        phone: "555-1234",
-        emergengcyCase: true
-    },
-    {
-        name: "Muhammad ALI",
-        age: 30,
-        diagnosis: "Diabetes",
-        phone: "555-5678",
-        emergengcyCase: false
-    },
-    {
-        name: "Aisha Begum",
-        age: 60,
-        diagnosis: "Arthritis",
-        phone: "555-8765",
-        emergengcyCase: true
-    },
-    {
-        name: "Mustufa Khan",
-        age: 45,
-        diagnosis: "Hypertension",
-        phone: "555-1234",
-        emergengcyCase: true
-    },
-    {
-        name: "Raza Khan",
-        age: 30,
-        diagnosis: "Diabetes",
-        phone: "555-5678",
-        emergengcyCase: false
-    },
-    {
-        name: "Shawana Begum",
-        age: 60,
-        diagnosis: "Arthritis",
-        phone: "555-8765",
-        emergengcyCase: true
-    },
-    {
-        name: "Saleem Khan",
-        age: 45,
-        diagnosis: "Hypertension",
-        phone: "555-1234",
-        emergengcyCase: false
-    },
-    {
-        name: "Umer Patel",
-        age: 30,
-        diagnosis: "Diabetes",
-        phone: "555-5678",
-        emergengcyCase: false
-    },
-    {
-        name: "Nadia Begum",
-        age: 60,
-        diagnosis: "Arthritis",
-        phone: "555-8765",
-        emergengcyCase: true
-    }
-];
+// const patients = [
+//     {
+//         name: "Fareed Khan",
+//         age: 45,
+//         diagnosis: "Hypertension",
+//         phone: "555-1234",
+//         emergengcyCase: true
+//     },
+//     {
+//         name: "Muhammad ALI",
+//         age: 30,
+//         diagnosis: "Diabetes",
+//         phone: "555-5678",
+//         emergengcyCase: false
+//     },
+//     {
+//         name: "Aisha Begum",
+//         age: 60,
+//         diagnosis: "Arthritis",
+//         phone: "555-8765",
+//         emergengcyCase: true
+//     },
+//     {
+//         name: "Mustufa Khan",
+//         age: 45,
+//         diagnosis: "Hypertension",
+//         phone: "555-1234",
+//         emergengcyCase: true
+//     },
+//     {
+//         name: "Raza Khan",
+//         age: 30,
+//         diagnosis: "Diabetes",
+//         phone: "555-5678",
+//         emergengcyCase: false
+//     },
+//     {
+//         name: "Shawana Begum",
+//         age: 60,
+//         diagnosis: "Arthritis",
+//         phone: "555-8765",
+//         emergengcyCase: true
+//     },
+//     {
+//         name: "Saleem Khan",
+//         age: 45,
+//         diagnosis: "Hypertension",
+//         phone: "555-1234",
+//         emergengcyCase: false
+//     },
+//     {
+//         name: "Umer Patel",
+//         age: 30,
+//         diagnosis: "Diabetes",
+//         phone: "555-5678",
+//         emergengcyCase: false
+//     },
+//     {
+//         name: "Nadia Begum",
+//         age: 60,
+//         diagnosis: "Arthritis",
+//         phone: "555-8765",
+//         emergengcyCase: true
+//     }
+// ];
 
-const doctor = [
-    {
-        name: "Dr. Orange",
-        specialization: "Diabetes",
-        phone: "555-4321",
-        appointment: 0,
-    },
-    {
-        name: "Dr. Yellow",
-        specialization: "Hypertension",
-        phone: "555-6789",
-        appointment: 0,
-    },
-    {
-        name: "Dr. Blue",
-        specialization: "Arthritis",
-        phone: "555-9876",
-        appointment: 0,
-    },
-];
-const MAX_APPOINTMENTS = 1;
+// const doctor = [
+//     {
+//         name: "Dr. Orange",
+//         specialization: "Diabetes",
+//         phone: "555-4321",
+//         appointment: 0,
+//     },
+//     {
+//         name: "Dr. Yellow",
+//         specialization: "Hypertension",
+//         phone: "555-6789",
+//         appointment: 0,
+//     },
+//     {
+//         name: "Dr. Blue",
+//         specialization: "Arthritis",
+//         phone: "555-9876",
+//         appointment: 0,
+//     },
+// ];
+// const MAX_APPOINTMENTS = 1;
 
-// return new Array  
-// filter and map 
+// // return new Array  
+// // filter and map 
 
-function bookAppoinment() {
-    document.write(`<h1>Appointment Booking System:<br>`);
-    patients.forEach(patient => {
-        const assignedDoctor = doctor.find(doc => doc.specialization === patient.diagnosis);
-        const assignedDoctors = doctor.filter(doc => doc.specialization === patient.diagnosis);
-        console.log(assignedDoctor, "find");
-        console.log(assignedDoctors, "filter");
-        if (!assignedDoctor) {
-            document.write(`<h2>No doctor for ${patient.name} (${patient.diagnosis}). <br>`);
-            return;
-        }
+// function bookAppoinment() {
+//     document.write(`<h1>Appointment Booking System:<br>`);
+//     patients.forEach(patient => {
+//         const assignedDoctor = doctor.find(doc => doc.specialization === patient.diagnosis);
+//         const assignedDoctors = doctor.filter(doc => doc.specialization === patient.diagnosis);
+//         console.log(assignedDoctor, "find");
+//         console.log(assignedDoctors, "filter");
+//         if (!assignedDoctor) {
+//             document.write(`<h2>No doctor for ${patient.name} (${patient.diagnosis}). <br>`);
+//             return;
+//         }
 
-        if (assignedDoctor.appointment < MAX_APPOINTMENTS || patient.emergengcyCase) {
-            assignedDoctor.appointment++;
-            document.write(`<br><h2> @ ${patient.name} assigned to ${assignedDoctor.name} (${patient.diagnosis}) (${patient.emergengcyCase ? "Emergency Case Priority" : "Normal"}). Appointment = ${assignedDoctor.appointment} <br>`);
-        } else {
-            document.write(`<h2><br> > Slots Are Full For ${assignedDoctor.name}. ${patient.name} appointment rejected. <br>`);
-        }
-    });
-}
+//         if (assignedDoctor.appointment < MAX_APPOINTMENTS || patient.emergengcyCase) {
+//             assignedDoctor.appointment++;
+//             document.write(`<br><h2> @ ${patient.name} assigned to ${assignedDoctor.name} (${patient.diagnosis}) (${patient.emergengcyCase ? "Emergency Case Priority" : "Normal"}). Appointment = ${assignedDoctor.appointment} <br>`);
+//         } else {
+//             document.write(`<h2><br> > Slots Are Full For ${assignedDoctor.name}. ${patient.name} appointment rejected. <br>`);
+//         }
+//     });
+// }
 
-bookAppoinment();
+// bookAppoinment();
