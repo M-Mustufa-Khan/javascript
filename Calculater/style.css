@@ -16,7 +16,7 @@
     margin-left: 15px;
     
 } */
-/* .box {
+ /* .box {
     height: 150px;
     width: 150px;
 }
@@ -36,7 +36,7 @@
 .bttn4 {
     background-color: orange;
 } */
-
+/* 
  /* {
   margin: 0;
   padding: 0;
@@ -44,7 +44,7 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 } */
 
-/* @media (max-width: 400px) {
+ @media (max-width: 400px) {
   .calculator {
     width: 90%;
   }
@@ -123,4 +123,4 @@ button:hover {
 
 #clearbtn:hover {
   background: #ef4444;
-} */
+} 
