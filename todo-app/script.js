@@ -4,7 +4,9 @@ let addBtn = document.getElementById("addbtn");
 
 function addTask() {
     if (input.value.trim() === "") {
+        alert("Please enter a task.");
         return;
+        
     }
 
     let text = input.value;
