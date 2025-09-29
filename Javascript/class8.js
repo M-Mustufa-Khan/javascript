@@ -146,3 +146,18 @@
 // }
 
 // bookAppoinment();
+
+// Singaleton Object
+// const google = {}
+//     google.title = "Google",
+//     google.url = "https://www.google.com",
+//     google.description =  "Search Engine"
+// console.log(google);
+
+// //Object literal 
+// const facebook = {
+//     title: "Facebook",
+//     url: "https://www.facebook.com",
+//     description: "Social Media"
+// }
+// console.log(facebook);
