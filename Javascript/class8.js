@@ -161,3 +161,15 @@
 //     description: "Social Media"
 // }
 // console.log(facebook);
+
+const student = [
+    {name: "ali", age: 23, marks: 458},
+    {name: "ahmed", age: 25, marks: 345},
+    {name: "sara", age: 22,  marks: 234}
+]
+// console.log(student);
+const passedStudents = Object.groupBy(student, student => {
+    return student.marks > 350 ? "passed" : "failed";
+});
+
+console.log(passedStudents);
