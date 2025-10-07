@@ -441,3 +441,42 @@ body {
   background: #088178;
   color: #fff;
 }
+
+#banner-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 80px;
+  gap: 20px; 
+}
+
+#banner3, #banner4, #banner5 {
+  flex: 1;
+  min-width: 30%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  color: bisque;
+}
+
+#banner3 { background-image: url(img/products/b7.jpg); }
+#banner4 { background-image: url(img/products/b8.jpg); }
+#banner5 { background-image: url(img/products/b9.jpg); }
+
+#banner3 h2, #banner4 h2, #banner5 h2 {
+  font-weight: 900;
+  font-size: 22px;
+}
+
+#banner3 h3, #banner4 h3, #banner5 h3 {
+  font-weight: 800;
+  font-size: 15px;
+  color: #ec544e;
+}
+
