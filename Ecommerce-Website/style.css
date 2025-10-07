@@ -463,11 +463,12 @@ body {
   padding: 20px;
   margin-bottom: 20px;
   color: bisque;
+  cursor: pointer;
 }
 
 #banner3 { background-image: url(img/products/b7.jpg); }
-#banner4 { background-image: url(img/products/b8.jpg); }
-#banner5 { background-image: url(img/products/b9.jpg); }
+#banner4 { background-image: url(img/products/b4.jpg); }
+#banner5 { background-image: url(img/products/b18.jpg); }
 
 #banner3 h2, #banner4 h2, #banner5 h2 {
   font-weight: 900;
