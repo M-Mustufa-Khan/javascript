@@ -1,33 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <section id="header">
-        <a href="index.html"><img src="./img/mk-logo.png" class="logo"></a>
-        <div>
+      <a href="index.html"><img src="./img/logo.png" class="logo" /></a>
+      <div>
         <ul id="navbar">
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+          </li>
         </ul>
-        </div>
+      </div>
     </section>
     <section id="hero">
-       <h4>Exclusive Offer</h4>
-       <h2>Premium Style Deals</h2>
-       <h1>On All Collections</h1>
-       <p>Shop the latest trends & save up to 70% with special discounts</p>
-       <button>Shop Now</button>
+      <h4>Exclusive Offer</h4>
+      <h2>Premium Style Deals</h2>
+      <h1>On All Collections</h1>
+      <p>Shop the latest trends & save up to 70% with special discounts</p>
+      <button>Shop Now</button>
+    </section>
+
+    <section id="feature">
+      <div class="fe-services">
+        <h2>Our Services</h2>
+        <p>What we provide to make your experience better</p>
+      </div>
+
+      <div class="services-container">
+        <div class="service-box">
+          <i class="fas fa-truck"></i>
+          <h3>Free Delivery</h3>
+          <p>Get your products delivered at no extra cost.</p>
+        </div>
+
+        <div class="service-box">
+          <i class="fas fa-credit-card"></i>
+          <h3>Secure Payment</h3>
+          <p>Safe and encrypted payment methods.</p>
+        </div>
+
+        <div class="service-box">
+          <i class="fas fa-headset"></i>
+          <h3>24/7 Support</h3>
+          <p>We're always here to help you anytime.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="product" class="section-p1">
+      <h2>Featured Products</h2>
+      <p>Our hand-picked items just for you</p>
+
+      <div class="pro-container">
+        <div class="pro">
+          <img src="./img/products/1casualTShirt.jpg" alt="Product 1" />
+          <div class="des">
+            <span>Dripline</span>
+            <h5>Grey T-Shirt</h5>
+            <p>Lightweight, breathable, and built for comfort.</p>
+            <div class="star">★★★★☆</div>
+          </div>
+          <div class="pro-bottom">
+            <h4>$49</h4>
+            <a
+              href="shop.html"
+              class="add-cart"
+              aria-label="Add Grey T-Shirt to cart"
+            >
+              <i class="fas fa-shopping-cart cart"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="pro">
+          <img src="./img/products/black1vshape.jpg" alt="Product 2" />
+          <div class="des">
+            <span>Dripline</span>
+            <h5>Black V-Shape</h5>
+            <p>A timeless essential made from 100% soft cotton.</p>
+            <div class="star">★★★★☆</div>
+          </div>
+          <div class="pro-bottom">
+            <h4>$49</h4>
+            <a
+              href="shop.html"
+              class="add-cart"
+              aria-label="Add Grey T-Shirt to cart"
+            >
+              <i class="fas fa-shopping-cart cart"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="pro">
+          <img src="./img/products/3Tshirts.jpg" alt="Product 3" />
+          <div class="des">
+            <span>Dripline</span>
+            <h5>Pack of 3</h5>
+            <p>Perfect for everyday wear.</p>
+            <div class="star">★★★★☆</div>
+          </div>
+          <div class="pro-bottom">
+            <h4>$59</h4>
+            <a
+              href="shop.html"
+              class="add-cart"
+              aria-label="Add Grey T-Shirt to cart"
+            >
+              <i class="fas fa-shopping-cart cart"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="pro">
+          <img src="./img/products/Downshoulder.jpg" alt="Product 4" />
+          <div class="des">
+            <span>Dripline</span>
+            <h5>Pack of Seven</h5>
+            <p>Trendy oversized fit for a modern streetwear vibe.</p>
+            <div class="star">★★★★☆</div>
+          </div>
+          <div class="pro-bottom">
+            <h4>$49</h4>
+            <a
+              href="shop.html"
+              class="add-cart"
+              aria-label="Add Grey T-Shirt to cart"
+            >
+              <i class="fas fa-shopping-cart cart"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="pro">
+          <img src="./img/products/darkgreen.jpg" alt="Product 5" />
+          <div class="des">
+            <span>Dripline</span>
+            <h5>Hawai Floral Print</h5>
+            <p>Made with ultra-soft, breathable cotton for maximum comfort.</p>
+            <div class="star">★★★★☆</div>
+          </div>
+          <div class="pro-bottom">
+            <h4>$49</h4>
+            <a
+              href="shop.html"
+              class="add-cart"
+              aria-label="Add Grey T-Shirt to cart"
+            >
+              <i class="fas fa-shopping-cart cart"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="pro">
+          <img src="./img/products/3Tshirts.jpg" alt="Product 6" />
+          <div class="des">
+            <span>Dripline</span>
+            <h5>Cotton T-Shirts</h5>
+            <p>Made with ultra-soft, breathable cotton for maximum comfort.</p>
+            <div class="star">★★★★☆</div>
+          </div>
+          <div class="pro-bottom">
+            <h4>$49</h4>
+            <a
+              href="shop.html"
+              class="add-cart"
+              aria-label="Add Grey T-Shirt to cart"
+            >
+              <i class="fas fa-shopping-cart cart"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="pro">
+          <img src="./img/products/black1vshape.jpg" alt="Product 7" />
+          <div class="des">
+            <span>Dripline</span>
+            <h5>Black V-Shape Neck</h5>
+            <p>Minimal design that pairs with anything.</p>
+            <div class="star">★★★★☆</div>
+          </div>
+          <div class="pro-bottom">
+            <h4>$49</h4>
+            <a
+              href="shop.html"
+              class="add-cart"
+              aria-label="Add Grey T-Shirt to cart"
+            >
+              <i class="fas fa-shopping-cart cart"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="pro">
+          <img src="./img/products/whiteCotton.jpg" alt="Product 8" />
+          <div class="des">
+            <span>Dripline</span>
+            <h5>Classic White Shirt</h5>
+            <p>Made from 100% soft cotton, lightweight and breathable.</p>
+            <div class="star">★★★★☆</div>
+          </div>
+          <div class="pro-bottom">
+            <h4>$49</h4>
+            <a
+              href="shop.html"
+              class="add-cart"
+              aria-label="Add Grey T-Shirt to cart"
+            >
+              <i class="fas fa-shopping-cart cart"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="banner" class="section-m1">
+      <div class="banner-content">
+        <h2>MEET FASHION CLOTHING COLLECTION</h2>
+        <p>Find the perfect outfit at Dripline.com</p>
+        <button class="explore">Explore Now</button>
+      </div>
+    </section>
+
+    <section id="product" class="section-p1">
+      <h2>New Arrivals</h2>
+      <p>Our hand-picked items just for you</p>
+
+      <div class="pro-container">
+        <div class="pro">
+          <img src="./img/products/1casualTShirt.jpg" alt="Product 1" />
+          <div class="des">
+            <span>Dripline</span>
+            <h5>Grey T-Shirt</h5>
+            <p>Lightweight, breathable, and built for comfort.</p>
+            <div class="star">★★★★☆</div>
+          </div>
+          <div class="pro-bottom">
+            <h4>$49</h4>
+            <a
+              href="shop.html"
+              class="add-cart"
+              aria-label="Add Grey T-Shirt to cart"
+            >
+              <i class="fas fa-shopping-cart cart"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="pro">
+          <img src="./img/products/black1vshape.jpg" alt="Product 2" />
+          <div class="des">
+            <span>Dripline</span>
+            <h5>Black V-Shape</h5>
+            <p>A timeless essential made from 100% soft cotton.</p>
+            <div class="star">★★★★☆</div>
+          </div>
+          <div class="pro-bottom">
+            <h4>$49</h4>
+            <a
+              href="shop.html"
+              class="add-cart"
+              aria-label="Add Grey T-Shirt to cart"
+            >
+              <i class="fas fa-shopping-cart cart"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="pro">
+          <img src="./img/products/3Tshirts.jpg" alt="Product 3" />
+          <div class="des">
+            <span>Dripline</span>
+            <h5>Pack of 3</h5>
+            <p>Perfect for everyday wear.</p>
+            <div class="star">★★★★☆</div>
+          </div>
+          <div class="pro-bottom">
+            <h4>$59</h4>
+            <a
+              href="shop.html"
+              class="add-cart"
+              aria-label="Add Grey T-Shirt to cart"
+            >
+              <i class="fas fa-shopping-cart cart"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="pro">
+          <img src="./img/products/Downshoulder.jpg" alt="Product 4" />
+          <div class="des">
+            <span>Dripline</span>
+            <h5>Pack of Seven</h5>
+            <p>Trendy oversized fit for a modern streetwear vibe.</p>
+            <div class="star">★★★★☆</div>
+          </div>
+          <div class="pro-bottom">
+            <h4>$49</h4>
+            <a
+              href="shop.html"
+              class="add-cart"
+              aria-label="Add Grey T-Shirt to cart"
+            >
+              <i class="fas fa-shopping-cart cart"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="pro">
+          <img src="./img/products/darkgreen.jpg" alt="Product 5" />
+          <div class="des">
+            <span>Dripline</span>
+            <h5>Hawai Floral Print</h5>
+            <p>Made with ultra-soft, breathable cotton for maximum comfort.</p>
+            <div class="star">★★★★☆</div>
+          </div>
+          <div class="pro-bottom">
+            <h4>$49</h4>
+            <a
+              href="shop.html"
+              class="add-cart"
+              aria-label="Add Grey T-Shirt to cart"
+            >
+              <i class="fas fa-shopping-cart cart"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="pro">
+          <img src="./img/products/3Tshirts.jpg" alt="Product 6" />
+          <div class="des">
+            <span>Dripline</span>
+            <h5>Cotton T-Shirts</h5>
+            <p>Made with ultra-soft, breathable cotton for maximum comfort.</p>
+            <div class="star">★★★★☆</div>
+          </div>
+          <div class="pro-bottom">
+            <h4>$49</h4>
+            <a
+              href="shop.html"
+              class="add-cart"
+              aria-label="Add Grey T-Shirt to cart"
+            >
+              <i class="fas fa-shopping-cart cart"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="pro">
+          <img src="./img/products/black1vshape.jpg" alt="Product 7" />
+          <div class="des">
+            <span>Dripline</span>
+            <h5>Black V-Shape Neck</h5>
+            <p>Minimal design that pairs with anything.</p>
+            <div class="star">★★★★☆</div>
+          </div>
+          <div class="pro-bottom">
+            <h4>$49</h4>
+            <a
+              href="shop.html"
+              class="add-cart"
+              aria-label="Add Grey T-Shirt to cart"
+            >
+              <i class="fas fa-shopping-cart cart"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="pro">
+          <img src="./img/products/whiteCotton.jpg" alt="Product 8" />
+          <div class="des">
+            <span>Dripline</span>
+            <h5>Classic White Shirt</h5>
+            <p>Made from 100% soft cotton, lightweight and breathable.</p>
+            <div class="star">★★★★☆</div>
+          </div>
+          <div class="pro-bottom">
+            <h4>$49</h4>
+            <a
+              href="shop.html"
+              class="add-cart"
+              aria-label="Add Grey T-Shirt to cart"
+            >
+              <i class="fas fa-shopping-cart cart"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sm-banner">
+  <div class="banner-box">
+    <div class="banner-content">
+      <h2>Summer Collection</h2>
+      <p>Up to 50% Off</p>
+      <button class="explore">Shop Now</button>
+    </div>
+  </div>
+
+  <div class="banner-box" style="background-image: url(./img/products/sm-banner2.jpeg);">
+    <div class="banner-content">
+      <h2>New Arrivals</h2>
+      <p>Discover the latest trends</p>
+      <button class="explore">Explore</button>
+    </div>
+  </div>
+</section>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
