@@ -21,7 +21,7 @@ if (close) {
 }
 
 // Small Image to Big Image
-// Active Effect jb picture jo open hogi uski duplicate matlb choti picture higlight hogi
+// Active Effect jb picture jo open hogi uski duplicate matlb choti picture higlight hogi iska file path src change hoga
 
 if (mainImg && smallImg.length > 0) {
   smallImg.forEach((img) => {

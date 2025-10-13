@@ -231,6 +231,7 @@ body {
   text-align: center;
   padding: 40px 80px;
   background: #f9f9f9;
+  cursor: pointer;
 }
 
 #product h2 {
@@ -934,38 +935,38 @@ footer .copy-right {
   #about-head div {
     padding-left: 0;
   }
-  #about-app h1{
+  #about-app h1 {
     font-size: 26px;
   }
-  #about-head h2{
+  #about-head h2 {
     font-size: 26px;
   }
 }
 
 /* Contact Page */
 
-#contact-details{
+#contact-details {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#contact-details .details{
+#contact-details .details {
   width: 40%;
 }
 
 #contact-details .details span,
-#form-details form span{
+#form-details form span {
   font-size: 12px;
 }
 
-#contact-details .details h2{
+#contact-details .details h2 {
   font-size: 26px;
   line-height: 35px;
   padding: 20px 0;
 }
 
-#contact-details .details h3{
+#contact-details .details h3 {
   font-size: 16px;
   padding-bottom: 15px;
 }
@@ -975,7 +976,7 @@ footer .copy-right {
   display: flex;
   padding: 10px 0;
 }
-#contact-details .details li i{
+#contact-details .details li i {
   font-size: 14px;
   padding-right: 22px;
 }
@@ -985,13 +986,12 @@ footer .copy-right {
   font-size: 14px;
 }
 
-#contact-details .map{
+#contact-details .map {
   margin: 30px 0;
   width: 50%;
   height: 350px;
-  
 }
-#contact-details .map iframe{
+#contact-details .map iframe {
   border-radius: 4px;
   width: 100%;
   height: 100%;
@@ -1090,14 +1090,350 @@ footer .copy-right {
   line-height: 1.5;
 }
 
-@media (max-width: 768px) {
-  #form-details {
+/* Cart Page */
+#cart {
+  overflow-x: auto;
+}
+
+#cart table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  white-space: nowrap;
+}
+#cart table img {
+  width: 70px;
+}
+
+#cart table td:nth-child(1) {
+  width: 100px;
+  text-align: center;
+}
+
+#cart table td:nth-child(2) {
+  width: 150px;
+  text-align: center;
+}
+
+#cart table td:nth-child(3) {
+  width: 250px;
+  text-align: center;
+}
+
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) {
+  width: 150px;
+  text-align: center;
+}
+
+#cart table td:nth-child(5) input {
+  width: 70px;
+  padding: 10px 5px 10px 15px;
+}
+
+#cart table thead {
+  border: 2px solid #e2e9e1;
+  border-left: none;
+  border-right: none;
+}
+
+#cart table thead td {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 18px 0;
+}
+
+#cart table tbody tr td {
+  padding-top: 15px;
+}
+
+#cart table tbody td {
+  font-size: 13px;
+}
+
+#cart-add {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#coupan {
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+#coupan h3,
+#Subtotal h3 {
+  padding-bottom: 15px;
+}
+
+#coupan input {
+  padding: 10px 20px;
+  outline: none;
+  width: 60%;
+  margin-right: 10px;
+  border: 1px solid #e2e9e1;
+}
+
+#coupan button,
+#Subtotal button {
+  background-color: #088178;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 3px;
+  border-style: none;
+}
+
+#coupan button:hover,
+#Subtotal button:hover {
+  background-color: #05524d;
+  transition: 0.3s ease;
+}
+
+#Subtotal {
+  width: 50%;
+  margin-bottom: 30px;
+  border: 1px solid #e2e9e1;
+  padding: 30px;
+}
+
+#Subtotal table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#Subtotal table td {
+  width: 50%;
+  border: 1px solid #e2e9e1;
+  padding: 10px;
+  font-size: 13px;
+}
+
+/* For responsive */
+
+@media (max-width: 992px) {
+  #cart table {
+    font-size: 14px;
+  }
+
+  #cart table img {
+    width: 60px;
+  }
+
+  #cart-add {
     flex-direction: column;
+    gap: 20px;
+  }
+
+  #coupan,
+  #Subtotal {
+    width: 100%;
+  }
+
+  #coupan input {
+    width: 65%;
+  }
+
+  #coupan button {
+    width: auto;
+  }
+
+  #Subtotal {
+    padding: 20px;
   }
 }
 
+@media (max-width: 992px) {
+  #cart table {
+    font-size: 14px;
+  }
 
-/* For Responsive */
+  #cart table img {
+    width: 60px;
+  }
+
+  #cart-add {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  #coupan,
+  #Subtotal {
+    width: 100%;
+  }
+
+  #coupan input {
+    width: 65%;
+  }
+
+  #Subtotal {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  #cart {
+    overflow-x: auto;
+  }
+
+  #cart table {
+    min-width: 700px;
+    border-spacing: 0;
+  }
+
+  #cart table td,
+  #cart table th {
+    white-space: nowrap;
+    text-align: center;
+  }
+
+  #cart table td:nth-child(3) {
+    width: 250px;
+    white-space: normal;
+    word-wrap: break-word;
+  }
+
+  #cart table td:nth-child(4),
+  #cart table td:nth-child(5),
+  #cart table td:nth-child(6) {
+    width: 120px;
+  }
+
+  #cart table img {
+    width: 55px;
+  }
+
+  #cart-add {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  #coupan,
+  #Subtotal {
+    width: 100%;
+  }
+
+  #coupan input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #coupan button,
+  #Subtotal button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #cart table {
+    min-width: 650px;
+    font-size: 12px;
+  }
+
+  #cart table td:nth-child(3) {
+    font-size: 13px;
+  }
+
+  #cart table img {
+    width: 45px;
+  }
+
+  #coupan h3,
+  #Subtotal h3 {
+    font-size: 16px;
+  }
+
+  #Subtotal {
+    padding: 15px;
+  }
+
+  #Subtotal table td {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  #coupan input {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+
+  #coupan button,
+  #Subtotal button {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 992px) {
+  #contact-details {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  #contact-details .details,
+  #contact-details .map {
+    width: 100%;
+  }
+
+  #contact-details .map {
+    margin-top: 20px;
+    height: 300px;
+  }
+
+  #form-details {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 40px 20px;
+  }
+
+  #form-details form {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #form-details .people {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 480px) {
+  #contact-details .details h2 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  #contact-details .details li {
+    padding: 6px 0;
+  }
+
+  #form-details form input,
+  #form-details form textarea {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  #form-details form button {
+    width: 100%;
+    padding: 12px;
+  }
+
+  #form-details .people div {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #form-details .people img {
+    width: 70px;
+    height: 70px;
+  }
+
+  #form-details .people p {
+    font-size: 13px;
+  }
+}
 
 @media (max-width: 799px) {
   #navbar {
@@ -1388,4 +1724,3 @@ footer .copy-right {
     display: block;
   }
 }
-
