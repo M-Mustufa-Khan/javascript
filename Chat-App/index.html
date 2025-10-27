@@ -3,25 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chat App UI</title>
+  <title>Chatbot</title>
   <link rel="stylesheet" href="style.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-  <div class="chat-header">
-    <h4>Chat App</h4>
-  </div>
   <div class="container">
-    <div class="chat-box">
-      <div class="message received">Hello! How are you?</div>
-      <div class="message sent">I'm good, thanks! And you?</div>
-      <div class="message received">I'm doing great, thanks for asking.</div>
+    <div class="chat-header">
+      <h4>Chatbot</h4>
     </div>
+    
+    <div class="chat-box"></div>
+
+    <div class="typing-indicator" style="display:none;">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+
     <div class="input-area">
       <input type="text" placeholder="Type a message..." class="userInput">
-      <button class="send-button">Send</button>
+      <button class="send-button">
+        <i class="fas fa-paper-plane"></i>
+      </button>
     </div>
   </div>
-    <script src="script.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
